@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Pierre Jean Portfolio
 ---
 👋 Welcome to My Portfolio
 
