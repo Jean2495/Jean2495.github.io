@@ -1,10 +1,5 @@
----
-layout: default
-title: Home
----
-👋 Welcome to My Portfolio
-
-Hi, I am a software developer currently completing my Capstone Project.
-This site will showcase my work in Software Design, Secure Coding, and Data Structures and Algorithms.
-
-
+title: Pierre Jean Portfolio 
+description: My CS-499 Capstone and software development projects
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme 
