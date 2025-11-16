@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Pierre Jean | CS-499 Capstone</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Top navigation -->
+        <header class="top-nav">
+            <div class="nav-inner">
+                <a href="#top" class="logo">&lt;Pierre Jean /&gt;</a>
+                <nav class="nav-links">
+                    <a href="#overview">Overview</a>
+                    <a href="#se-design">Software Eng & Design</a>
+                    <a href="#skills">Stack</a>
+                    <a href="#timeline">Timeline</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="top">
+            <!-- HERO -->
+            <section class="hero" id="overview">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">SNHU • CS-499 Capstone</p>
+                    <h1>
+                        Travlr Getaways
+                        <span class="accent">(MEAN Stack)</span>
+                    </h1>
+                    <p class="hero-text">
+                        This page showcases my <strong>Capstone artifact</strong> for
+                        <strong>Category One: Software Engineering and Design</strong>. The project
+                        is a full-stack travel booking application built with the
+                        <strong>MEAN stack</strong>, designed with clean architecture, secure
+                        backend APIs, and a maintainable codebase.
+                    </p>
+                    <p class="hero-text">
+                        Right now, this page focuses on
+                        <strong>software engineering and design</strong>. I’ll add a dedicated
+                        section for <strong>data structures &amp; algorithms</strong> once I
+                        complete that enhancement.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#se-design" class="btn primary">View Category One</a>
+                        <a href="#timeline" class="btn ghost">See enhancement plan</a>
+                    </div>
+                    <p class="hero-note">
+                        <span class="bullet"></span>
+                        Current focus: architecture, secure API design, and clean software
+                        engineering practices.
+                    </p>
+                </div>
+
+                <!-- Hero side card -->
+                <div class="hero-card">
+                    <p class="hero-tag">Capstone focus</p>
+                    <h2>Category One: Software Engineering &amp; Design</h2>
+                    <p class="hero-card-text">
+                        Enhance the existing Travlr Getaways MEAN application to demonstrate
+                        professional-quality software engineering, including layered architecture,
+                        secure APIs, and consistent design patterns.
+                    </p>
+                    <ul class="hero-tech-list">
+                        <li>MEAN Stack</li>
+                        <li>Layered Architecture</li>
+                        <li>Secure REST APIs</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SOFTWARE ENGINEERING & DESIGN  -->
+            <section id="se-design" class="section">
+                <div class="section-header">
+                    <h2>Software Engineering &amp; Design Artifact</h2>
+                    <p>
+                        Travlr Getaways (MEAN stack) enhanced to meet the CS-499 software
+                        engineering and design outcomes.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Card 1: Architecture & Structure -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>1. Backend Architecture &amp; API Design</h3>
+                            <span class="project-tag">Category One</span>
+                        </div>
+                        <p class="project-text">
+                            The Node.js/Express API is organized into well-defined layers: routes,
+                            controllers, services, and data access. Each layer has a single
+                            responsibility, making the code easier to maintain, test, and extend.
+                        </p>
+                        <p class="project-text">
+                            I use RESTful conventions for endpoints, clear request/response models,
+                            and centralized error handling to keep the API predictable and
+                            consistent.
+                        </p>
+                        <ul class="pill-list">
+                            <li>Express routing</li>
+                            <li>Controller–service pattern</li>
+                            <li>RESTful endpoints</li>
+                            <li>Error handling</li>
+                        </ul>
+                        <div class="project-links">
+                            <!-- Optional: add repo link later -->
+                            <!-- <a href="https://github.com/Jean2495" target="_blank" rel="noopener">
+                View capstone repo ↗
+              </a> -->
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Data & Models-->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>2. Domain Modeling &amp; Data Design</h3>
+                            <span class="project-tag">Software Design</span>
+                        </div>
+                        <p class="project-text">
+                            Trip, user, and booking data are modeled with Mongoose schemas that
+                            match the real-world domain: trip codes, pricing, dates, and
+                            relationships between travelers and trips.
+                        </p>
+                        <p class="project-text">
+                            Validation rules and schema constraints help enforce data quality at the
+                            model layer, reducing bugs and keeping the database consistent.
+                        </p>
+                        <ul class="pill-list">
+                            <li>MongoDB / Mongoose</li>
+                            <li>Domain modeling</li>
+                            <li>Validation rules</li>
+                            <li>Schema design</li>
+                        </ul>
+                        <div class="project-links">
+                            <!-- <a href="https://github.com/Jean2495" target="_blank" rel="noopener">
+                View schema design ↗
+              </a> -->
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Backend Security & Reliability -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>3. Backend Security &amp; Reliability Engineering</h3>
+                            <span class="project-tag">Security &amp; SE Design</span>
+                        </div>
+                        <p class="project-text">
+                            This enhancement improves the security and reliability of the Travlr
+                            API. I implemented consistent middleware-based authentication checks,
+                            safe password handling, standardized error responses, and server-side
+                            input validation.
+                        </p>
+                        <p class="project-text">
+                            These improvements strengthen system integrity and demonstrate
+                            professional software engineering practices by ensuring predictable
+                            behavior, reducing risk of bad data, and preventing unauthorized access.
+                        </p>
+                        <ul class="pill-list">
+                            <li>JWT authentication</li>
+                            <li>Input validation</li>
+                            <li>Error handling</li>
+                            <li>Middleware design</li>
+                        </ul>
+                        <div class="project-links">
+                            <!-- <a href="https://github.com/Jean2495" target="_blank" rel="noopener">
+                View backend enhancements ↗
+              </a> -->
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Placeholder for future DSA section -->
+            </section>
+
+            <!-- STACK / SKILLS -->
+            <section id="skills" class="section section-alt">
+                <div class="section-header">
+                    <h2>Capstone Tech Stack</h2>
+                    <p>Technologies and practices used in the Travlr Getaways enhancement.</p>
+                </div>
+
+                <div class="skills-layout">
+                    <div>
+                        <h3>Languages</h3>
+                        <ul class="skill-list">
+                            <li>JavaScript (Node.js)</li>
+                            <li>TypeScript</li>
+                            <li>JSON / REST</li>
+                            <li>MongoDB query language</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Frameworks &amp; Libraries</h3>
+                        <ul class="skill-list">
+                            <li>Node.js / Express (backend API)</li>
+                            <li>MongoDB / Mongoose (data modeling)</li>
+                            <li>JWT (authentication)</li>
+                            <li>bcrypt (secure password hashing)</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Engineering Practices</h3>
+                        <ul class="skill-list">
+                            <li>Layered architecture</li>
+                            <li>Separation of concerns</li>
+                            <li>Secure coding mindset</li>
+                            <li>Git &amp; GitHub workflow</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TIMELINE -->
+            <section id="timeline" class="section">
+                <div class="section-header">
+                    <h2>Enhancement Timeline</h2>
+                    <p>
+                        How the Travlr Getaways project is being transformed into a capstone-ready
+                        artifact.
+                    </p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <p class="timeline-date">Step 1</p>
+                            <h3>Baseline Project Review</h3>
+                            <p>
+                                Reviewed the original Travlr Getaways implementation from CS-465,
+                                identified strengths, and documented areas to improve architecture,
+                                security, and documentation for the capstone.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <p class="timeline-date">Step 2</p>
+                            <h3>Refactor for Architecture &amp; Design</h3>
+                            <p>
+                                Introduced clear layers (routes, controllers, services, models) and
+                                standardized API responses to align the backend with software
+                                engineering best practices.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <p class="timeline-date">Step 3</p>
+                            <h3>Security &amp; Reliability Enhancements</h3>
+                            <p>
+                                Improved authentication and authorization, added validation and
+                                error handling, and ensured that sensitive operations are protected.
+                                This step shows how design and security support each other.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <p class="timeline-date">Step 4 (Planned)</p>
+                            <h3>Data Structures &amp; Algorithms Extension</h3>
+                            <p>
+                                Future enhancement: integrate targeted data structures and
+                                algorithmic improvements (for example, efficient search, filtering,
+                                or caching) and document them in a dedicated DSA section for the
+                                capstone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="section section-alt">
+                <div class="section-header">
+                    <h2>Contact &amp; Portfolio</h2>
+                    <p>For capstone review, questions, or opportunities related to this project:</p>
+                </div>
+
+                <div class="contact-card">
+                    <p>Email</p>
+                    <a href="mailto:jeanpierrejacquestoussaint506@gmail.com">
+                        jeanpierrejacquestoussaint506@gmail.com
+                    </a>
+
+                    <div class="contact-links">
+                        <a href="https://github.com/Jean2495" target="_blank" rel="noopener">
+                            GitHub ↗
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© <span id="year"></span> Pierre Jean – CS-499 Capstone.</p>
+        </footer>
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>
