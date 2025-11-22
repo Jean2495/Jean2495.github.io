@@ -20,6 +20,7 @@
                 <nav class="nav-links">
                     <a href="#overview">Overview</a>
                     <a href="#se-design">Software Eng & Design</a>
+                    <a href="#dsa">Algorithms & Data Structures</a>
                     <a href="#skills">Stack</a>
                     <a href="#timeline">Timeline</a>
                     <a href="#contact">Contact</a>
@@ -36,6 +37,7 @@
                         Travlr Getaways
                         <span class="accent">(MEAN Stack)</span>
                     </h1>
+
                     <p class="hero-text">
                         This page showcases my <strong>Capstone artifact</strong> for
                         <strong>Category One: Software Engineering and Design</strong>. The project
@@ -43,36 +45,41 @@
                         <strong>MEAN stack</strong>, designed with clean architecture, secure
                         backend APIs, and a maintainable codebase.
                     </p>
+
                     <p class="hero-text">
-                        Right now, this page focuses on
-                        <strong>software engineering and design</strong>. I’ll add a dedicated
-                        section for <strong>data structures &amp; algorithms</strong> once I
-                        complete that enhancement.
+                        A dedicated section for <strong>data structures & algorithms</strong> has
+                        now been added to showcase cursor-based pagination, indexed filtering, and
+                        optimized search algorithms.
                     </p>
+
                     <div class="hero-actions">
                         <a href="#se-design" class="btn primary">View Category One</a>
-                        <a href="#timeline" class="btn ghost">See enhancement plan</a>
+                        <a href="#dsa" class="btn primary">View Category Two</a>
+                        <a href="#timeline" class="btn ghost">See Enhancement Plan</a>
                     </div>
+
                     <p class="hero-note">
                         <span class="bullet"></span>
-                        Current focus: architecture, secure API design, and clean software
-                        engineering practices.
+                        Current progress: Software Engineering fully enhanced; Data Structures &
+                        Algorithms and Database enhancements underway.
                     </p>
                 </div>
 
                 <!-- Hero side card -->
                 <div class="hero-card">
-                    <p class="hero-tag">Capstone focus</p>
-                    <h2>Category One: Software Engineering &amp; Design</h2>
+                    <p class="hero-tag">CS-499 Capstone</p>
+                    <h2>Three-Category Enhancement Summary</h2>
+
                     <p class="hero-card-text">
-                        Enhance the existing Travlr Getaways MEAN application to demonstrate
-                        professional-quality software engineering, including layered architecture,
-                        secure APIs, and consistent design patterns.
+                        The Travlr Getaways application was enhanced across all required capstone
+                        categories, demonstrating full-stack engineering, algorithmic efficiency,
+                        and optimized database design.
                     </p>
+
                     <ul class="hero-tech-list">
-                        <li>MEAN Stack</li>
-                        <li>Layered Architecture</li>
-                        <li>Secure REST APIs</li>
+                        <li>Category 1: Software Engineering & Design</li>
+                        <li>Category 2: Algorithms & Data Structures</li>
+                        <li>Category 3: Databases & Analytics</li>
                     </ul>
                 </div>
             </section>
@@ -110,12 +117,6 @@
                             <li>RESTful endpoints</li>
                             <li>Error handling</li>
                         </ul>
-                        <div class="project-links">
-                            <!-- Optional: add repo link later -->
-                            <!-- <a href="https://github.com/Jean2495" target="_blank" rel="noopener">
-                View capstone repo ↗
-              </a> -->
-                        </div>
                     </article>
 
                     <!-- Card 2: Data & Models-->
@@ -139,11 +140,7 @@
                             <li>Validation rules</li>
                             <li>Schema design</li>
                         </ul>
-                        <div class="project-links">
-                            <!-- <a href="https://github.com/Jean2495" target="_blank" rel="noopener">
-                View schema design ↗
-              </a> -->
-                        </div>
+                        <div class="project-links"></div>
                     </article>
 
                     <!-- Card 3: Backend Security & Reliability -->
@@ -169,15 +166,92 @@
                             <li>Error handling</li>
                             <li>Middleware design</li>
                         </ul>
-                        <div class="project-links">
-                            <!-- <a href="https://github.com/Jean2495" target="_blank" rel="noopener">
-                View backend enhancements ↗
-              </a> -->
-                        </div>
+                        <div class="project-links"></div>
                     </article>
                 </div>
+            </section>
 
-                <!-- Placeholder for future DSA section -->
+            <!-- ALGORITHMS & DATA STRUCTURES -->
+            <section id="dsa" class="section section-alt">
+                <div class="section-header">
+                    <h2>Algorithms &amp; Data Structures Enhancement</h2>
+                    <p>
+                        Category Two enhancement demonstrating optimized data retrieval using
+                        cursor-based pagination, indexed filtering, and efficient query algorithms.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- CARD 1: Cursor Pagination -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>1. Cursor-Based Pagination</h3>
+                            <span class="project-tag">Category Two</span>
+                        </div>
+                        <p class="project-text">
+                            I replaced the original <code>skip()</code>-based pagination with a
+                            <strong>cursor-driven algorithm</strong> using MongoDB’s ObjectId
+                            values. This avoids scanning and skipping large sets of documents and
+                            greatly improves time complexity on growing datasets.
+                        </p>
+                        <p class="project-text">
+                            The backend now returns <code>nextCursor</code> tokens, enabling stable,
+                            predictable, and efficient forward pagination.
+                        </p>
+                        <ul class="pill-list">
+                            <li>Improved time complexity</li>
+                            <li>Efficient iteration</li>
+                            <li>Cursor decoding &amp; encoding</li>
+                            <li>Scalable API design</li>
+                        </ul>
+                    </article>
+
+                    <!-- CARD 2: Indexed Filtering -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>2. Indexed Filtering &amp; Query Optimization</h3>
+                            <span class="project-tag">Performance</span>
+                        </div>
+                        <p class="project-text">
+                            The search API now supports efficient filtering by resort, price, and
+                            date ranges. These filters leverage model-level indexes to reduce lookup
+                            times and avoid full collection scans.
+                        </p>
+                        <p class="project-text">
+                            I implemented dynamic filter construction based on the user’s search
+                            parameters to minimize query cost.
+                        </p>
+                        <ul class="pill-list">
+                            <li>Compound indexes</li>
+                            <li>Date-range search</li>
+                            <li>Efficient filters</li>
+                            <li>Reduced query overhead</li>
+                        </ul>
+                    </article>
+
+                    <!-- CARD 3: Algorithmic Design & Documentation -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>3. Algorithmic Design &amp; Documentation</h3>
+                            <span class="project-tag">DSA</span>
+                        </div>
+                        <p class="project-text">
+                            I designed a clean search algorithm that validates inputs, builds
+                            optimized queries, and handles cursor markers for pagination. The final
+                            version is documented with pseudocode to explain logic flow.
+                        </p>
+                        <p class="project-text">
+                            This demonstrates professional algorithmic reasoning aligned with CS-499
+                            requirements.
+                        </p>
+                        <ul class="pill-list">
+                            <li>Pseudocode design</li>
+                            <li>Query planning</li>
+                            <li>Edge-case handling</li>
+                            <li>Validation logic</li>
+                        </ul>
+                    </article>
+                </div>
             </section>
 
             <!-- STACK / SKILLS -->
@@ -225,61 +299,83 @@
                 <div class="section-header">
                     <h2>Enhancement Timeline</h2>
                     <p>
-                        How the Travlr Getaways project is being transformed into a capstone-ready
-                        artifact.
+                        How the Travlr Getaways project has evolved into a fully enhanced,
+                        capstone-ready artifact across software engineering, algorithms, and
+                        databases.
                     </p>
                 </div>
 
                 <div class="timeline">
+                    <!-- Step 1 -->
                     <div class="timeline-item">
                         <span class="timeline-dot"></span>
                         <div class="timeline-content">
                             <p class="timeline-date">Step 1</p>
                             <h3>Baseline Project Review</h3>
                             <p>
-                                Reviewed the original Travlr Getaways implementation from CS-465,
-                                identified strengths, and documented areas to improve architecture,
-                                security, and documentation for the capstone.
+                                Analyzed the original Travlr Getaways code from CS-465, identified
+                                architectural issues, security gaps, and areas that required
+                                modernization for capstone-level quality.
                             </p>
                         </div>
                     </div>
 
+                    <!-- Step 2 -->
                     <div class="timeline-item">
                         <span class="timeline-dot"></span>
                         <div class="timeline-content">
                             <p class="timeline-date">Step 2</p>
-                            <h3>Refactor for Architecture &amp; Design</h3>
+                            <h3>Refactor for Software Engineering & Design</h3>
                             <p>
-                                Introduced clear layers (routes, controllers, services, models) and
-                                standardized API responses to align the backend with software
-                                engineering best practices.
+                                Implemented a layered architecture (routes, controllers, services,
+                                repositories), introduced cleaner separation of concerns, added
+                                consistent API response models, and improved code readability and
+                                maintainability.
                             </p>
                         </div>
                     </div>
 
+                    <!-- Step 3 -->
                     <div class="timeline-item">
                         <span class="timeline-dot"></span>
                         <div class="timeline-content">
                             <p class="timeline-date">Step 3</p>
-                            <h3>Security &amp; Reliability Enhancements</h3>
+                            <h3>Security & Reliability Enhancements</h3>
                             <p>
-                                Improved authentication and authorization, added validation and
-                                error handling, and ensured that sensitive operations are protected.
-                                This step shows how design and security support each other.
+                                Strengthened backend security using JWT authentication, protected
+                                admin routes, validated request bodies, normalized error handling,
+                                and improved environment configuration to support secure deployment.
                             </p>
                         </div>
                     </div>
 
+                    <!-- Step 4: DSA Enhancement -->
                     <div class="timeline-item">
                         <span class="timeline-dot"></span>
                         <div class="timeline-content">
-                            <p class="timeline-date">Step 4 (Planned)</p>
-                            <h3>Data Structures &amp; Algorithms Extension</h3>
+                            <p class="timeline-date">Step 4</p>
+                            <h3>Algorithms & Data Structures Enhancement</h3>
                             <p>
-                                Future enhancement: integrate targeted data structures and
-                                algorithmic improvements (for example, efficient search, filtering,
-                                or caching) and document them in a dedicated DSA section for the
-                                capstone.
+                                Implemented cursor-based pagination, indexed filtering, and
+                                efficient query construction to replace the original
+                                <code>skip()</code>/<code>limit()</code>
+                                approach. This enhancement improved scalability and demonstrated
+                                algorithmic problem-solving aligned with Category Two requirements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Databases Enhancement (Current/Planned) -->
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <p class="timeline-date">Step 5 (In Progress)</p>
+                            <h3>Database Optimization & Analytics</h3>
+                            <p>
+                                Adding compound indexes, secure database access patterns, and
+                                MongoDB aggregation pipelines to support analytics features. This
+                                enhancement completes Category Three and finalizes the full capstone
+                                artifact.
                             </p>
                         </div>
                     </div>
@@ -300,8 +396,12 @@
                     </a>
 
                     <div class="contact-links">
-                        <a href="https://github.com/Jean2495" target="_blank" rel="noopener">
-                            GitHub ↗
+                        <a
+                            href="https://github.com/Jean2495/Jean2495.github.io.git"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            GitHub &#8599;
                         </a>
                     </div>
                 </div>

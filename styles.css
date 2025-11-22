@@ -475,7 +475,7 @@ main {
     }
 
     .nav-links {
-        display: none; /* keep it minimal on mobile */
+        display: none;
     }
 
     .section-alt {
